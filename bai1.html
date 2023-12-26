@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang web bán hàng</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trang web bán hàng</h1>
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Sản phẩm</a></li>
+      <li><a href="#">Giới thiệu</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+    <h2>Thông tin sản phẩm</h2>
+    <table>
+      <tr>
+        <th>Tên sản phẩm</th>
+        <th>Mô tả</th>
+        <th>Giá</th>
+        <th>Số lượng</th>
+      </tr>
+      <tr>
+        <td>Sản phẩm 1</td>
+        <td>Mô tả sản phẩm 1</td>
+        <td>100.000đ</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Sản phẩm 2</td>
+        <td>Mô tả sản phẩm 2</td>
+        <td>200.000đ</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Sản phẩm 3</td>
+        <td>Mô tả sản phẩm 3</td>
+        <td>300.000đ</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <div>
+      <h2>Thông tin người dùng</h2>
+      <form>
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" /><br />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" /><br />
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone" /><br />
+
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" name="address" /><br />
+
+        <button type="submit">Đặt hàng</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>©2023 Trang web bán hàng</p>
+    </footer>
+    <h2>My Store</h2>
+    <table>
+      <tr>
+        <th>Item Photo</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>[Oranges Photo]</td>
+        <td>Oranges</td>
+        <td>$1 ea.</td>
+      </tr>
+      <tr>
+        <td>[Bananas Photo]</td>
+        <td>Bananas</td>
+        <td>$0.75/b</td>
+      </tr>
+      <tr>
+        <td>[Pomegranates Photo]</td>
+        <td>Pomegranates</td>
+        <td>3 for $5</td>
+      </tr>
+      <tr>
+        <td>[Gummy Bears Photo]</td>
+        <td>Gummy Bears</td>
+        <td>56 per bag</td>
+      </tr>
+      <tr>
+        <td>[Broccoli Photo]</td>
+        <td>Broccoli</td>
+        <td>$3 a head</td>
+      </tr>
+    </table>
+    <h2>Booking Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" /><br /><br />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" /><br /><br />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" /><br /><br />
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>Car Purchase Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+  
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <div>
+            <label for="Car">Choose a Car:</label>
+            <select id="Car" name="Car">
+              <option value="Model 1">Model 1</option>
+              <option value="Model 2">Model 2</option>
+              <option value="Other">Khác</option>
+            </select /><br /><br />
+        </div>
+
+        <div>
+            <label for="Car">Choose a Color:</label>
+            <select id="Car" name="Car">
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Other">Khác</option>
+            </select /><br /><br />
+        </div>
+
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity" /><br /><br />
+
+        <label for="date">Delivery Date:</label>
+        <input type="date" id="date" name="date" /><br /><br />
+
+        <input type="submit" value="Submit" />
+    </form>
+    <h3>Sở thích của bạn</h3>
+    <form action="/submit_preferences" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="interest"><p>Sở thích:</p></label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">Thể thao
+
+        <input type="checkbox" id="surfing" name="interest" value="surfing">
+        <label for="surfing">Lướt web
+
+        <input type="checkbox" id="travel" name="interest" value="travel">
+        <label for="travel">Du lịch</label><br>
+
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Âm nhạc
+
+        <input type="checkbox" id="gaming" name="interest" value="gaming">
+        <label for="gaming">Chơi game
+
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <label for="reading">Đọc sách</label><br>
+
+        <input type="checkbox" id="movies" name="interest" value="movies">
+        <label for="movies">Điện ảnh</label><br>
+
+        <input type="submit" value="Gửi thông tin">
+        <input type="submit" value="Nhập lại">
+    </form>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+  
+    <form>
+        <label><strong>What is your age range?</strong></label>
+        <select id="age" name="age">
+          <option value="18-24">18-24</option>
+         
+        </select>
+        <br /><br />
+      
+        <label><strong>What is your yearly income range?</strong></label>
+        <select id="income" name="income">
+          <option value="$0 - $25,000">$0 - $25,000</option>
+      
+        </select>
+        <br /><br />
+      
+        <label><strong>Which of the following products have you purchased in the last 2 months?</strong></label>
+        <br />
+        <input type="checkbox" id="product1" name="products" value="Product 1">
+        <label for="product1">Product 1</label>
+        <br />
+        <input type="checkbox" id="product2" name="products" value="Product 2">
+        <label for="product2">Product 2</label>
+        <br />
+        <input type="checkbox" id="product3" name="products" value="Product 3">
+        <label for="product3">Product 3</label>
+        <br /><br />
+      
+        <label><strong>How often would you use our new product?</strong></label>
+        <br />
+        <input type="radio" id="daily" name="frequency" value="Daily">
+        <label for="daily">Daily</label>
+        <br />
+        <input type="radio" id="weekly" name="frequency" value="Weekly">
+        <label for="weekly">Weekly</label>
+        <br />
+        <input type="radio" id="monthly" name="frequency" value="Monthly">
+        <label for="monthly">Monthly</label>
+        <br /><br />
+      
+        <label><strong>What would you pay for the new product?</strong></label>
+        <br />
+        <input type="number" id="dollars" name="dollars" placeholder="Dollars">
+        <input type="number" id="cents" name="cents" placeholder="Cents">
+        <br /><br />
+      </form>
+      <form>
+        <label><strong>What features would you like to see in the new product?</strong></label>
+        <br />
+        <textarea id="features" name="features" rows="4" cols="50"></textarea>
+        <br /><br />
+            <p>Please rate your level of agreement with the following statements.</p>
+            <form>
+                <table>
+            
+                    <tr>
+                        <td><strong>Our products are priced fairly.</strong></td>
+                        <td><input type="radio" id="disagree1" name="pricing" value="1"></td>
+                        <td><input type="radio" id="disagree2" name="pricing" value="2"></td>
+                        <td><input type="radio" id="agree3" name="pricing" value="3"></td>
+                        <td><input type="radio" id="agree4" name="pricing" value="4"></td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Our products are high quality.</strong></td>
+                        <td><input type="radio" id="disagree5" name="quality" value="1"></td>
+                        <td><input type="radio" id="disagree6" name="quality" value="2"></td>
+                        <td><input type="radio" id="agree7" name="quality" value="3"></td>
+                        <td><input type="radio" id="agree8" name="quality" value="4"></td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>You would recommend our product to a friend or coworker.</strong></td>
+                        <td><input type="radio" id="disagree9" name="recommend" value="1"></td>
+                        <td><input type="radio" id="disagree10" name="recommend" value="2"></td>
+                        <td><input type="radio" id="agree11" name="recommend" value="3"></td>
+                        <td><input type="radio" id="agree12" name="recommend" value="4"></td>
+                    </tr>
+                </table>
+            
+                <button type="submit"><strong>Submit</strong></button>
+            </form>
+  </body>
+</html>
